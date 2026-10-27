@@ -1,6 +1,6 @@
 cask "aerostage" do
-  version "1.3.1"
-  sha256 "075fcfdebcade7404e856cbe618216bb08de9aca3ce9a306a64174ff601b81e3"
+  version "1.3.2"
+  sha256 "48dfbfa7df5fbba757e64e1985c961146a330cbef0be80e920c90affd5e6ad3c"
 
   url "https://github.com/Tech-Maou/AeroStage/releases/download/v#{version}/AeroStage-v#{version}.zip"
   name "AeroStage"
