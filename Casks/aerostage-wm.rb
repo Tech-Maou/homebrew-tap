@@ -18,6 +18,9 @@ cask "aerostage-wm" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/AeroStage WM.app"], must_succeed: false
   end
 
+  # Quit first, so all windows return to the screen; `brew upgrade` opens the app again.
+  uninstall quit: "io.github.tech-maou.AeroStageWM"
+
   zap trash: [
     "~/Library/LaunchAgents/io.github.tech-maou.AeroStageWM.plist",
     "~/Library/Preferences/io.github.tech-maou.AeroStageWM.plist",

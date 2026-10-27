@@ -18,6 +18,9 @@ cask "aerostage" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/AeroStage.app"], must_succeed: false
   end
 
+  # Quit before uninstalling or upgrading; `brew upgrade` opens the app again afterwards.
+  uninstall quit: "io.github.tech-maou.AeroStage"
+
   zap trash: [
     "~/.aerospace.toml.aerostage-backup",
     "~/Library/Application Support/AeroStage",
