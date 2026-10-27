@@ -22,7 +22,6 @@ cask "aerostage" do
   uninstall quit: "io.github.tech-maou.AeroStage"
 
   zap trash: [
-    "~/.aerospace.toml.aerostage-backup",
     "~/Library/Application Support/AeroStage",
     "~/Library/Preferences/io.github.tech-maou.AeroStage.plist",
   ]
