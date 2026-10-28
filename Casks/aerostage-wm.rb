@@ -1,6 +1,6 @@
 cask "aerostage-wm" do
-  version "0.21.3-stage.4"
-  sha256 "3011c6f23f02310493e78958a68bcec653784c759d41a5614e0382972084735b"
+  version "0.21.3-stage.5"
+  sha256 "a84730b21b43d7d5e47059e9d5e7f6073826eced996abf02d2b1088a735680df"
 
   url "https://github.com/Tech-Maou/AeroStage-WM/releases/download/v#{version}/AeroStage-WM-v#{version}.zip"
   name "AeroStage WM"
